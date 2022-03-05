@@ -10,13 +10,13 @@ class Blockchain
     public:
         Blockchain();
 
-        void addBlock(Block block);
+        void add_block(Block block);
 
     private:
-        uint32_t nDifficulty;
-        std::vector<Block> vChain;
+        uint32_t n_difficulty;
+        std::vector<Block> v_chain;
 
-        Block getLastBlock() const;
+        Block get_last_block() const;
 };
 
 #endif
