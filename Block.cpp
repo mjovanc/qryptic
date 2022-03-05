@@ -2,8 +2,8 @@
 #include "Block.h"
 #include "sha256.h"
 
-Block::Block(uint32_t nIndexIn, const std::string &sDataIn) : 
-    n_index(nIndexIn), s_data(sDataIn)
+Block::Block(uint32_t n_index_in, const std::string &s_data_in) : 
+    n_index(n_index_in), s_data(s_data_in)
 {
     n_nonce = -1;
     t_time = time(nullptr);
