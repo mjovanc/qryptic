@@ -49,7 +49,9 @@ build
 ### CMake Patch ###
 # External projects
 *-prefix/
-Blockchain
+
+# ignore executable
+BlockchainCPP
 
 # VS Code
 .vscode
