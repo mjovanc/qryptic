@@ -21,8 +21,16 @@ Mining block 3...
 Block mined: 000000f0afe28da43bc218c23a5d6ecbbc3b7e7efa80db61c7bfc5302759256c
 ```
 
+## Unit tests
+
+To run the test cases in **blockchain_test.cpp** that comes along we need (after we have built) to run:
+
+`./build/blockchain_test`
+
+We need in the future to link all test files so we can run all unit tests at once.
+
 ## Clean 
 
 If we want to do a cleanup of generated files during build we can run:
 
-`git clean -xfd`
+`git clean`

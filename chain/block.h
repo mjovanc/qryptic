@@ -11,7 +11,10 @@ class Block
 
         Block(uint32_t n_index_in, const std::string &s_data_in);
 
+        uint32_t get_index();
+
         std::string get_hash();
+        std::string get_data();
 
         void mine_block(uint32_t n_difficulty);
 

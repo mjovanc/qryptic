@@ -9,9 +9,19 @@ Block::Block(uint32_t n_index_in, const std::string &s_data_in) :
     t_time = time(nullptr);
 }
 
+uint32_t Block::get_index()
+{
+    return n_index;
+}
+
 std::string Block::get_hash()
 {
     return s_hash;
+}
+
+std::string Block::get_data()
+{
+    return s_data;
 }
 
 void Block::mine_block(uint32_t n_difficulty)
