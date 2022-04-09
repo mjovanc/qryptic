@@ -1,1 +1,4 @@
-add_library(crypto sha256.cpp)
+add_library(
+    crypto
+    sha256.cpp
+)

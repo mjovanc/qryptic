@@ -1,12 +1,12 @@
 # blockchain-cpp
-Blockchain written in C++
+Simple Blockchain written in C++ for learning purposes. 
 
-## Setup
+## Setup and run
 
 1. Clone the repository
 2. Run `cmake .` to initialize CMake project
 3. Run `cmake --build .`
-4. Run executable `./Blockchain`
+4. Run executable `./BlockchainCPP`
 
 ## Output
 
@@ -20,3 +20,9 @@ Block mined: 0000008b49647809ec537284d4853152e49b7a1757a5b1af4449a89b5151fa4b
 Mining block 3...
 Block mined: 000000f0afe28da43bc218c23a5d6ecbbc3b7e7efa80db61c7bfc5302759256c
 ```
+
+## Clean 
+
+If we want to do a cleanup of generated files during build we can run:
+
+`git clean -xfd`
