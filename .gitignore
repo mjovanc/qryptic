@@ -50,7 +50,7 @@ build
 # External projects
 *-prefix/
 
-# ignore executable
+# ignore executablegit
 BlockchainCPP
 
 # VS Code
