@@ -1,4 +1,4 @@
-#include "Blockchain.h"
+#include "blockchain.h"
 
 Blockchain::Blockchain()
 {

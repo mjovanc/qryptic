@@ -1,6 +1,6 @@
 #include <sstream>
-#include "Block.h"
-#include "sha256.h"
+#include "block.h"
+#include "../crypto/sha256.h"
 
 Block::Block(uint32_t n_index_in, const std::string &s_data_in) : 
     n_index(n_index_in), s_data(s_data_in)

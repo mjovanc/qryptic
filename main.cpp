@@ -1,5 +1,9 @@
-#include "Blockchain.h"
+#include "chain/blockchain.h"
 
+/* 
+ * Temporary file used for demonstration 
+ * Will be removed in future when unit tests are in place
+ */
 int main(int argc, char* argv[])
 {
     Blockchain bChain = Blockchain();

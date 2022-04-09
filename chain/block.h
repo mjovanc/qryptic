@@ -21,6 +21,7 @@ class Block
         std::string s_data;
         std::string s_hash;
         time_t t_time;
+        //TODO: should hold transaction as a vector or something here?
 
         std::string calculate_hash() const;
 };
