@@ -5,8 +5,9 @@ Simple Blockchain written in C++ for learning purposes.
 
 1. Clone the repository
 2. Run `cmake .` to initialize CMake project
-3. Run `cmake --build .`
-4. Run executable `./BlockchainCPP`
+3. Run `cmake -B ./build -S .`
+4. Go to build directory and run `make`
+5. Run executable `./BlockchainCPP`
 
 ## Output
 
@@ -33,4 +34,4 @@ We need in the future to link all test files so we can run all unit tests at onc
 
 If we want to do a cleanup of generated files during build we can run:
 
-`git clean`
+`git clean -xfd`

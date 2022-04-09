@@ -11,7 +11,6 @@ class Blockchain
         Blockchain();
 
         void add_block(Block block);
-        //TODO: void add_transaction(Transaction transaction);
 
     private:
         uint32_t n_difficulty;

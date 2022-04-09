@@ -24,13 +24,9 @@ add_executable(
   ./test/blockchain_test.cpp
 )
 
-target_link_libraries(
-  blockchain_test
-  gtest_main
-)
-
 include(GoogleTest)
 gtest_discover_tests(blockchain_test)
+target_link_libraries(blockchain_test gtest_main)
 
 # directories to be included
 include_directories(${PROJECT_SOURCE_DIR})
@@ -38,13 +34,31 @@ include_directories(${PROJECT_SOURCE_DIR})
 # add the executable
 add_executable(${PROJECT_NAME} main.cpp)
 
+
 # add the subdirectories
 add_subdirectory(chain)
 add_subdirectory(crypto)
 
 # include directories
-target_include_directories(${PROJECT_NAME} PUBLIC chain crypto)
+target_include_directories(
+  ${PROJECT_NAME}
+  PUBLIC
+  chain
+  crypto
+  wallet
+)
 
 # link libraries
-target_link_directories(${PROJECT_NAME} PRIVATE chain crypto)
-target_link_libraries(${PROJECT_NAME} chain crypto)
+target_link_directories(
+  ${PROJECT_NAME}
+  PRIVATE
+  chain
+  crypto
+  wallet
+)
+target_link_libraries(
+  ${PROJECT_NAME}
+  chain
+  crypto
+  wallet
+)
