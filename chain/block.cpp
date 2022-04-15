@@ -2,26 +2,26 @@
 #include "block.h"
 #include "../crypto/sha256.h"
 
-Block::Block(uint32_t n_index_in, const std::string &s_data_in) : 
-    n_index(n_index_in), s_data(s_data_in)
+Block::Block(uint32_t n_index_in, const std::string &s_data_in) :
+        m_index(n_index_in), m_data(s_data_in)
 {
-    n_nonce = -1;
-    t_time = time(nullptr);
+    m_nonce = -1;
+    m_time = time(nullptr);
 }
 
 uint32_t Block::get_index()
 {
-    return n_index;
+    return m_index;
 }
 
 std::string Block::get_hash()
 {
-    return s_hash;
+    return m_hash;
 }
 
 std::string Block::get_data()
 {
-    return s_data;
+    return m_data;
 }
 
 void Block::mine_block(uint32_t n_difficulty)
@@ -36,17 +36,17 @@ void Block::mine_block(uint32_t n_difficulty)
 
     do
     {
-        n_nonce++;
-        s_hash = calculate_hash();
-    } while (s_hash.substr(0, n_difficulty) != str);
+        m_nonce++;
+        m_hash = calculate_hash();
+    } while (m_hash.substr(0, n_difficulty) != str);
 
-    std::cout << "Block mined: " << s_hash << std::endl;
+    std::cout << "Block mined: " << m_hash << std::endl;
 }
 
 inline std::string Block::calculate_hash() const
 {
     std::stringstream ss;
-    ss << n_index << t_time << s_data << n_nonce << s_prev_hash;
+    ss << m_index << m_time << m_data << m_nonce << m_prev_hash;
 
     return sha256(ss.str());
 }

@@ -55,3 +55,10 @@ BlockchainCPP
 
 # VS Code
 .vscode
+
+# drawio
+*.bkp
+
+# idea
+.idea
+cmake-build-debug

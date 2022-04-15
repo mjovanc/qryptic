@@ -13,8 +13,8 @@ class Blockchain
         void add_block(Block block);
 
     private:
-        uint32_t n_difficulty;
-        std::vector<Block> v_chain;
+        uint32_t m_difficulty;
+        std::vector<Block> m_chain;
 
         Block get_last_block() const;
 };
