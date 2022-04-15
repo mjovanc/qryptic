@@ -44,7 +44,7 @@ If we want to do a cleanup of generated files during build we can run:
 If you would like to contribute to this project there is two ways:
 
 - Send a pull request
-- Donate to our BTC/ETH address to keep the servers running
+- Donate to our BTC/ETH address
 - Join our Discord and discuss ideas
 
 ### Pull request
@@ -53,8 +53,11 @@ We appreciate all contributions whether it be small changes such as documentatio
 
 ```
 What does this PR do?
+
 Why are these changes required?
+
 This PR has been tested using (e.g. Unit Tests, Manual Testing):
+
 Extra details?
 ```
 
@@ -86,4 +89,4 @@ To be part of the conversation, join our Discord server: [https://discord.gg/2xc
 
 ## License
 
-The license is MIT.
+The license is GPL-3.0 License.
