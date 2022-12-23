@@ -67,10 +67,6 @@ BTC: bc1ql97dlhhexma7agkk7gmg76t7ljycuqc9xgr4vl
 
 ETH: 0x03A049028B673Cc5EF676695f442eC5614877335
 
-### Discord
-
-To be part of the conversation, join our Discord server: [https://discord.gg/2xc7F2xbkz](https://discord.gg/2xc7F2xbkz)
-
 ## Contributors
 
 
