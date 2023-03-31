@@ -1,7 +1,5 @@
 # Qryptic
 
-![alt text](qryptic-logo.png "Qryptic")
-
 Simple Blockchain written in C++. Currently just for learning purposes. 
 
 ## Setup and run
@@ -69,19 +67,7 @@ ETH: 0x03A049028B673Cc5EF676695f442eC5614877335
 
 ## Contributors
 
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/mjovanc"><img src="https://avatars.githubusercontent.com/u/33717111?v=4" width="100px;" alt=""/><br /><sub><b>Marcus Cvjeticanin</b></sub></a><br /></td>
-  </tr>
-</table>
-
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
+[<img src="https://github.com/mjovanc.png?size=72" alt="mjovanc" width="72">](https://github.com/mjovanc)
 
 ## License
 
